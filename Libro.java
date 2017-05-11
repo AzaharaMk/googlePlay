@@ -30,4 +30,9 @@ public class Libro extends ProductoMultimedia
    {
        return ficcion;
    }
+
+	public double precioProducto()
+	{
+		return 0;
+	}
 }

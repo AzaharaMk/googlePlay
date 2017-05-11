@@ -9,6 +9,7 @@ public class Aplicacion extends Producto
 {
     private Categoria tipoCategoria;
     private double tamanioAplicacion;
+	private double precioAplicacion;
 
     /**
      * Constructor for objects of class Aplicacion
@@ -19,6 +20,7 @@ public class Aplicacion extends Producto
         super(nombreAplicacion);
         this.tamanioAplicacion = tamanioAplicacion;
         this.tipoCategoria = tipoCategoria;
+		precioAplicacion = 0.99;
     }
 
     /**
@@ -26,7 +28,7 @@ public class Aplicacion extends Producto
      */
     public String getNombre()
     {
-        return getPorducto();
+        return getProducto();
     }
     
      /**
@@ -67,5 +69,30 @@ public class Aplicacion extends Producto
         
         return cadenaADevolver;
     }
+
+	public double precioProducto()
+	{
+		String cadenaADevolver = "";
+		switch(tipoCategoria)
+		{
+			case MULTIMEDIA:
+				cadenaADevolver = "Multimedia";
+				break;
+
+			case JUEGOS:
+				cadenaADevolver = "Juegos";
+				break;
+
+			case PRODUCTIVIDAD:
+				cadenaADevolver = "Productividad";
+				break;
+
+			case COMUNICACIONES:
+				cadenaADevolver = "Comunicaciones";
+				break;
+		}
+        
+		return 0;
+	}
     
 }

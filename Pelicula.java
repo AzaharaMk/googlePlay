@@ -46,5 +46,17 @@ public class Pelicula extends ProductoMultimedia
         }
         return nombreCalidad;
     }
-
+	
+	/**
+		Método que devuelve el precio de la película.
+		todas cuestan 0.99 euros. Si la aplicación ha sido vendida ya al menos dos veces, 
+		entonces cuesta 5 euros si es un juego, 10 si es una aplicación de productividad, 
+		2 euros si es una aplicación multimedia o de comunicaciones.
+	*/
+	public double precioProducto()
+	{
+		double precioPelicula = 0.99;
+		
+		return precioPelicula;
+	}
 }
